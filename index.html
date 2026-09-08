@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070812"><title>GAME ZONE</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="loadingScreen" class="loading-screen" aria-label="Chargement de GAME ZONE">
+<div class="loader-card"><div class="loader-brand">GAME <span>ZONE</span></div>
+<div class="loader-sub">CHARGEMENT DE LA ZONE DE JEU</div>
+<div class="loader-track"><div id="loaderFill" class="loader-fill"></div>
+<div class="loader-caterpillars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+<div id="loaderPercent" class="loader-percent">0%</div></div></div>
+<header><a class="logo" href="#accueil"><b>GAME</b> <span>ZONE</span></a>
+<nav><a href="#accueil">Accueil</a><a href="#jeux">Jeux</a><a href="#boutique">Boutique</a><a href="#compte">Compte</a></nav>
+</header>
+<main>
+<section id="accueil" class="hero"><div><small>PLATEFORME GAMING</small>
+<h1>JOUE.<br><em>FIGHT.</em><br>WIN.</h1>
+<p>Retrouve tes jeux, consulte les articles et prépare ton espace GAME ZONE.</p>
+<a class="btn" href="#jeux">Voir les jeux</a> <a class="btn ghost" href="#compte">Mon compte</a></div>
+<div class="heroCard"><strong>GZ</strong><label>GAME ZONE</label></div></section>
+
+<section id="jeux"><small>BIBLIOTHÈQUE</small><h2>Jeux disponibles</h2>
+<article class="game"><div class="art"><b>GZ</b><span>BLOX FRUIT</span></div>
+<div><i>3D • AVENTURE • ACTION</i><h3>Blox Fruit</h3>
+<p>Explore les mers, les îles et les pouvoirs dans l'aventure Blox Fruit.</p>
+<p class="meta">Sea 1 + Sea 2 · Mobile · Hors ligne disponible</p><div class="app-note">⚡ <b>Ouverture rapide :</b> si Blox Fruit est installé, GAME ZONE tente de lancer directement l'application.</div>
+<button class="btn wide" id="play">▶ Jouer à Blox Fruit</button></div></article><div id="openFallback" class="fallback hidden">
+  <div><b>📱 Blox Fruit n'est pas ouvert</b><p>Si l'application est installée, vérifie qu'elle a bien été créée avec le schéma <code>gamezone</code>.</p></div>
+  <div class="fallbackActions"><button class="btn" id="downloadBlox">📥 Télécharger Blox Fruit</button><button class="btn ghost" id="copyLink">Copier le lien d'ouverture</button></div>
+</div></section>
+
+<section id="boutique"><small>BOUTIQUE</small><h2>Articles & monnaies</h2>
+<div class="notice"><b>🛠️</b><div><h3>La boutique n'est pas encore prête</h3>
+<p>Tu peux consulter les articles, mais les achats ne sont pas encore disponibles.
+Le développeur est au courant : le site n'est pas encore finalisé. Ne t'inquiète pas.</p></div></div>
+<div class="grid">
+<article><b>💎</b><h3>GAME ZONE Coins</h3><p>Monnaie virtuelle GAME ZONE</p><button class="disabled">Pas encore disponible</button></article>
+<article><b>🎟️</b><h3>Pass & bonus</h3><p>Articles numériques et avantages</p><button class="disabled">Pas encore disponible</button></article>
+<article><b>🕹️</b><h3>V-Bucks & monnaies externes</h3><p>Redirection officielle à prévoir</p><button class="disabled">Pas encore disponible</button></article>
+</div></section>
+
+<section id="compte"><small>ESPACE JOUEUR</small><h2>Ton compte GAME ZONE</h2>
+<div class="account"><div id="avatar">GZ</div><div class="grow"><span>Statut</span><h3 id="name">Visiteur</h3><p id="status">Connecte-toi pour préparer la future liaison avec tes jeux.</p></div>
+<button class="btn" id="login">Se connecter</button></div></section>
+</main>
+<footer><b>GAME ZONE</b><span>Version de construction • achats désactivés</span></footer>
+
+<div id="modal" class="modal hidden"><div class="box"><button id="close">×</button><small>GAME ZONE</small><h2>Connexion</h2>
+<p>Interface de construction : aucun mot de passe n'est enregistré.</p>
+<input id="player" maxlength="24" placeholder="Nom du joueur"><button class="btn wide" id="ok">Continuer</button></div></div>
+<div id="toast"></div><script src="script.js"></script><div id="downloadModal" class="modal hidden" role="dialog" aria-modal="true">
+<div class="modal-box"><button class="modal-close" id="closeDownload" aria-label="Fermer">×</button>
+<div class="modal-icon">📥</div><h2>Blox Fruit n'est pas ouvert</h2>
+<p>L'application n'est peut-être pas installée sur ton téléphone.</p>
+<a id="downloadApk" class="btn wide primary-action" href="#">⬇ Télécharger Blox Fruit APK</a>
+<p class="modal-note">Le lien du fichier APK sera activé dès que tu l'auras publié sur GitHub.</p>
+</div></div>
+</body></html>
