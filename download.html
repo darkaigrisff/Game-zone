@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#070812"
+    >
+
+    <title>Télécharger Blox Fruit — GAME ZONE</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <style>
+
+        .download-page {
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 30px;
+        }
+
+        .download-box {
+            width: min(600px, 100%);
+
+            padding: 40px 30px;
+
+            text-align: center;
+
+            border-radius: 28px;
+
+            background:
+                rgba(10, 11, 25, 0.88);
+
+            border: 1px solid
+                rgba(155, 90, 255, 0.30);
+
+            box-shadow:
+                0 30px 100px
+                rgba(0, 0, 0, 0.55);
+
+            backdrop-filter: blur(14px);
+        }
+
+        .download-logo {
+            font-size: 80px;
+            font-weight: 1000;
+
+            color: #a35cff;
+
+            text-shadow:
+                0 0 35px
+                rgba(160, 85, 255, 0.55);
+
+            margin-bottom: 15px;
+        }
+
+        .download-box h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        .download-box p {
+            color: #aaaabd;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .download-button {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            width: 100%;
+
+            min-height: 55px;
+
+            padding: 15px 20px;
+
+            border-radius: 15px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #9145ff,
+                    #6429cf
+                );
+
+            color: white;
+
+            text-decoration: none;
+
+            font-weight: 900;
+            font-size: 16px;
+
+            box-shadow:
+                0 10px 30px
+                rgba(120, 50, 230, 0.35);
+
+            transition: 0.25s ease;
+        }
+
+        .download-button:hover {
+            transform: translateY(-3px);
+
+            filter: brightness(1.12);
+
+            box-shadow:
+                0 15px 40px
+                rgba(130, 60, 255, 0.45);
+        }
+
+        .back-button {
+            display: inline-block;
+
+            margin-top: 18px;
+
+            color: #aaaabd;
+
+            text-decoration: none;
+
+            font-size: 14px;
+        }
+
+        .back-button:hover {
+            color: white;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <main class="download-page">
+
+        <div class="download-box">
+
+            <div class="download-logo">
+                GZ
+            </div>
+
+            <h1>
+                Blox Fruit
+            </h1>
+
+            <p>
+                Le téléchargement de Blox Fruit
+                est prêt.
+            </p>
+
+            <!--
+                IMPORTANT :
+                Le fichier doit avoir exactement ce nom :
+
+                BloxFruit.apk
+
+                et être placé dans le même dossier
+                que download.html.
+            -->
+
+            <a
+                class="download-button"
+                href="BloxFruit.apk"
+                download
+            >
+                ⬇️ TÉLÉCHARGER BLOX FRUIT
+            </a>
+
+            <a
+                class="back-button"
+                href="index.html"
+            >
+                ← Retour à GAME ZONE
+            </a>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

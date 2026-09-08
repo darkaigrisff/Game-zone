@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="theme-color" content="#070812">
+
+  <title>GAME ZONE</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header>
+
+    <a class="logo" href="#accueil">
+      <b>GAME</b>
+      <span>ZONE</span>
+    </a>
+
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#jeux">Jeux</a>
+      <a href="#boutique">Boutique</a>
+      <a href="#compte">Compte</a>
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- =========================
+         ACCUEIL
+    ========================== -->
+
+    <section id="accueil" class="hero">
+
+      <div>
+
+        <small>PLATEFORME GAMING</small>
+
+        <h1>
+          JOUE.<br>
+          <em>FIGHT.</em><br>
+          WIN.
+        </h1>
+
+        <p>
+          Retrouve tes jeux, télécharge tes applications
+          et prépare ton espace GAME ZONE.
+        </p>
+
+        <a class="btn" href="#jeux">
+          Voir les jeux
+        </a>
+
+        <a class="btn ghost" href="#compte">
+          Mon compte
+        </a>
+
+      </div>
+
+
+      <div class="heroCard">
+
+        <strong>GZ</strong>
+
+        <label>
+          GAME ZONE
+        </label>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         JEUX
+    ========================== -->
+
+    <section id="jeux">
+
+      <small>BIBLIOTHÈQUE</small>
+
+      <h2>
+        Jeux disponibles
+      </h2>
+
+
+      <article class="game">
+
+        <div class="art">
+
+          <b>GZ</b>
+
+          <span>
+            BLOX FRUIT
+          </span>
+
+        </div>
+
+
+        <div>
+
+          <i>
+            3D • AVENTURE • ACTION
+          </i>
+
+          <h3>
+            Blox Fruit
+          </h3>
+
+          <p>
+            Explore les mers, les îles et les pouvoirs
+            dans l'aventure Blox Fruit.
+          </p>
+
+          <p class="meta">
+            Sea 1 + Sea 2 · Mobile · Hors ligne disponible
+          </p>
+
+
+          <!--
+            IMPORTANT :
+            Le bouton ouvre d'abord l'application.
+            Si elle n'est pas disponible, le script
+            redirige vers download.html.
+          -->
+
+          <button
+            class="btn wide"
+            id="play"
+            type="button">
+
+            ▶ Jouer / Télécharger
+
+          </button>
+
+        </div>
+
+      </article>
+
+    </section>
+
+
+    <!-- =========================
+         BOUTIQUE
+    ========================== -->
+
+    <section id="boutique">
+
+      <small>BOUTIQUE</small>
+
+      <h2>
+        Articles & monnaies
+      </h2>
+
+
+      <div class="notice">
+
+        <b>🛠️</b>
+
+        <div>
+
+          <h3>
+            La boutique n'est pas encore prête
+          </h3>
+
+          <p>
+            Tu peux consulter les articles,
+            mais les achats ne sont pas encore disponibles.
+            Le site est encore en développement.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="grid">
+
+        <article>
+
+          <b>💎</b>
+
+          <h3>
+            GAME ZONE Coins
+          </h3>
+
+          <p>
+            Monnaie virtuelle GAME ZONE
+          </p>
+
+          <button class="disabled">
+            Pas encore disponible
+          </button>
+
+        </article>
+
+
+        <article>
+
+          <b>🎟️</b>
+
+          <h3>
+            Pass & bonus
+          </h3>
+
+          <p>
+            Articles numériques et avantages
+          </p>
+
+          <button class="disabled">
+            Pas encore disponible
+          </button>
+
+        </article>
+
+
+        <article>
+
+          <b>🕹️</b>
+
+          <h3>
+            V-Bucks & monnaies externes
+          </h3>
+
+          <p>
+            Redirection officielle à prévoir
+          </p>
+
+          <button class="disabled">
+            Pas encore disponible
+          </button>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         COMPTE
+    ========================== -->
+
+    <section id="compte">
+
+      <small>ESPACE JOUEUR</small>
+
+      <h2>
+        Ton compte GAME ZONE
+      </h2>
+
+
+      <div class="account">
+
+        <div id="avatar">
+          GZ
+        </div>
+
+
+        <div class="grow">
+
+          <span>
+            Statut
+          </span>
+
+          <h3 id="name">
+            Visiteur
+          </h3>
+
+          <p id="status">
+            Connecte-toi pour préparer la liaison
+            avec tes jeux.
+          </p>
+
+        </div>
+
+
+        <button
+          class="btn"
+          id="login"
+          type="button">
+
+          Se connecter
+
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <b>
+      GAME ZONE
+    </b>
+
+    <span>
+      Plateforme gaming
+    </span>
+
+  </footer>
+
+
+  <!-- =========================
+       MODALE COMPTE
+  ========================== -->
+
+  <div
+    id="modal"
+    class="modal hidden">
+
+    <div class="box">
+
+      <button id="close" type="button">
+        ×
+      </button>
+
+      <small>
+        GAME ZONE
+      </small>
+
+      <h2>
+        Connexion
+      </h2>
+
+      <p>
+        Entre ton nom de joueur.
+      </p>
+
+      <input
+        id="player"
+        maxlength="24"
+        placeholder="Nom du joueur">
+
+      <button
+        class="btn wide"
+        id="ok"
+        type="button">
+
+        Continuer
+
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       NOTIFICATION
+  ========================== -->
+
+  <div id="toast"></div>
+
+
+  <!-- =========================
+       SCRIPT PRINCIPAL
+  ========================== -->
+
+  <script src="script.js"></script>
+
+
+  <!-- =========================
+       SYSTÈME BLOX FRUIT
+  ========================== -->
+
+  <script>
+
+    const GAME_APP =
+      "gamezone://bloxfruit";
+
+    const DOWNLOAD_PAGE =
+      "download.html";
+
+
+    const playButton =
+      document.getElementById("play");
+
+
+    if (playButton) {
+
+      playButton.addEventListener(
+        "click",
+        function () {
+
+          /*
+             On tente d'abord d'ouvrir
+             l'application Blox Fruit.
+          */
+
+          const start =
+            Date.now();
+
+          const iframe =
+            document.createElement("iframe");
+
+          iframe.style.display =
+            "none";
+
+          iframe.src =
+            GAME_APP;
+
+          document.body.appendChild(
+            iframe
+          );
+
+
+          /*
+             Si l'application n'est pas
+             installée, on envoie l'utilisateur
+             vers la page de téléchargement.
+          */
+
+          setTimeout(
+            function () {
+
+              if (
+                document.body.contains(
+                  iframe
+                )
+              ) {
+
+                iframe.remove();
+
+              }
+
+
+              /*
+                 Si le navigateur est toujours
+                 visible, l'application n'a
+                 probablement pas été ouverte.
+              */
+
+              if (
+                !document.hidden &&
+                Date.now() - start >= 1200
+              ) {
+
+                window.location.href =
+                  DOWNLOAD_PAGE;
+
+              }
+
+            },
+            1400
+          );
+
+        }
+      );
+
+    }
+
+  </script>
+
+</body>
+
+</html>
