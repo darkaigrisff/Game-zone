@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>GAME ZONE — Speed Race</title>
+<link rel="stylesheet" href="speed.css">
+</head>
+<body>
+<div id="speedRoot">
+    <header class="topbar">
+        <button id="backButton">‹</button>
+        <div><small>GAME ZONE</small><h1>SPEED RACE</h1></div>
+        <span id="score">0</span>
+    </header>
+
+    <main id="gameArea">
+        <div class="road">
+            <div class="lane lane1"></div>
+            <div class="lane lane2"></div>
+            <div class="lane lane3"></div>
+            <div id="playerCar" class="car">R</div>
+            <div id="enemyCar" class="car enemy">E</div>
+        </div>
+        <div class="hud"><span>VITESSE</span><strong id="speedText">1</strong></div>
+        <div class="controls">
+            <button id="leftButton">GAUCHE</button>
+            <button id="boostButton">BOOST</button>
+            <button id="rightButton">DROITE</button>
+        </div>
+    </main>
+
+    <div id="result" class="overlay hidden">
+        <div class="panel">
+            <div class="resultTitle" id="resultTitle">COURSE TERMINÉE</div>
+            <p id="resultMessage">Tu as terminé la course.</p>
+            <button id="restartButton">REJOUER</button>
+            <button id="lobbyButton">LOBBY</button>
+        </div>
+    </div>
+</div>
+<script src="speed.js"></script>
+</body>
+</html>
