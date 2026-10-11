@@ -1,5 +1,57 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Boutique — GAME ZONE</title><link rel="stylesheet" href="site.css"></head><body><div class="topline"></div><header class="site-header"><div class="shell header-inner"><a class="brand" href="index.html" aria-label="GAME ZONE accueil"><span class="brand-mark">GZ</span><span>GAME <span>ZONE</span></span></a><nav class="main-nav" aria-label="Navigation principale"><a href="index.html" class="">Accueil</a><a href="index.html#jeux">Jeux</a><a href="jeux.html">Guides</a><a href="boutique.html" class="active">Boutique</a><a href="redeem.html" class="">Redeem</a><a href="actualites.html" class="">Actualités</a><a href="support.html" class="">Support</a><a href="compte.html" data-gz-account-link>Connexion GAME ZONE</a></nav><a class="header-cta" href="actualites.html">Voir les annonces <span>↗</span></a></div></header><main class="shell"><section class="page-hero"><div class="eyebrow">Espace officiel</div><h1>La boutique <span style="color:var(--cyan)">GAME ZONE</span></h1><p>Choisis le projet concerné. Sélectionne Blox Fruit, Space Battle ou FOOTBALL LIGUE 2027 pour ouvrir la page de paiement et saisir ton code d’achat. Si tu n’as pas encore de code, contacte l’agent sur WhatsApp.</p></section><section class="section"><div class="content-grid">
-<article class="shop-card"><div class="mini-label">01 / ACTION</div><h3>Space Battle</h3><div class="price">T-Bucks · 100 à 10 000</div><p>Choisis Space Battle pour saisir ton code d’achat et sélectionner le pack de T-Bucks.</p><a class="btn btn-primary" href="payement.html?jeu=space">Sélectionner Space Battle ↗</a></article>
-<article class="shop-card"><div class="mini-label">02 / RPG</div><h3>Blox Fruit</h3><div class="price">GAME ZONE</div><p>Ouvre l’espace d’achat de Blox Fruit pour saisir ton code et choisir le montant souhaité.</p><a class="btn btn-primary" href="payement.html?jeu=bloxfruit">Sélectionner Blox Fruit ↗</a></article>
-<article class="shop-card"><div class="mini-label">03 / FOOTBALL</div><h3>FOOTBALL LIGUE 2027</h3><div class="price">FL7</div><p>Retrouve l’espace d’achat du projet Football Ligue 2027.</p><a class="btn btn-primary" href="payement.html?jeu=football">Sélectionner Football Ligue ↗</a></article>
-</div><div class="notice">Choisis un jeu pour ouvrir le formulaire de paiement. La vérification affichée sur ce site contrôle le format des codes uniquement ; la validation réelle nécessite un système serveur.</div><div class="hero-actions"><a class="btn btn-outline" href="redeem.html">Aller à Redeem ↗</a><a class="btn btn-outline" href="jeux.html">Voir les guides ↗</a></div></section></main><footer class="site-footer"><div class="shell footer-inner"><div><div class="footer-brand">GAME <span>ZONE</span></div><p style="margin:7px 0 0">Ton univers de jeux. © 2026 GAME ZONE</p></div><div class="footer-links"><a href="boutique.html">Boutique</a><a href="redeem.html">Redeem</a><a href="actualites.html">Actualités</a><a href="support.html">Support</a></div><div class="social-row"><a class="social-link" data-social="whatsapp" href="https://wa.me/24102471171"><img src="logo1.png" alt="">WhatsApp</a><a class="social-link" data-social="discord" href="https://discord.gg/EdnFkHthk"><img src="logo2.png" alt="">Discord</a><a class="social-link" data-social="youtube" href="https://www.youtube.com/@Game-zone-io"><img src="logo3.png" alt="">YouTube</a><a class="social-link" data-social="tiktok" href="https://www.tiktok.com/@game.zone.io"><img src="logo4.png" alt="">TikTok</a></div></div></footer><script src="social.js"></script><script src="account.js"></script></body></html>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <title>GAME ZONE — Boutique Space Battle</title>
+  <link rel="stylesheet" href="boutique.css">
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <a class="back" href="space.html" aria-label="Retour au jeu">‹</a>
+      <div class="brand"><small>GAME ZONE • SPACE BATTLE</small><h1>BOUTIQUE GALACTIQUE</h1></div>
+    </header>
+
+    <section class="panel">
+      <section class="codePanel" aria-labelledby="codeTitle">
+        <div class="sectionKicker">ESPACE ACHAT</div>
+        <h2 id="codeTitle">Entre ton code d’achat</h2>
+        <p class="intro">Entre ton code d’achat. Pour l’offre de 110 T-Bucks, une vérification d’achat supplémentaire est obligatoire.</p>
+        <label class="field-label" for="purchaseCode">CODE D’ACHAT</label>
+        <input class="field" id="purchaseCode" type="text" placeholder="SP-ACHAT-XXX" autocomplete="off" autocapitalize="characters" spellcheck="false" maxlength="32">
+        <button class="btn primary" id="activateCode" type="button">VÉRIFIER LE CODE D’ACHAT</button>
+        <div id="verificationPanel" hidden>
+          <label class="field-label" for="verificationCode">CODE DE VÉRIFICATION D’ACHAT — 110 T-BUCKS</label>
+          <input class="field" id="verificationCode" type="text" placeholder="SP-VEF-XXX" autocomplete="off" autocapitalize="characters" spellcheck="false" maxlength="32">
+          <button class="btn primary" id="confirmPurchase" type="button">CONFIRMER L’ACHAT</button>
+        </div>
+        <p class="status" id="purchaseStatus" role="status" aria-live="polite"></p>
+        <div class="balance purpleBalance"><span>◆ SOLDE DE T-BUCKS (FRAGMENTS VIOLETS)</span><strong id="balanceValue">0 T-Bucks</strong></div>
+        <label class="field-label" for="tBuckAmount">CHOISIS LE MONTANT DE T-BUCKS</label>
+        <select class="field" id="tBuckAmount">
+          <option value="100">100 T-Bucks</option><option value="110">110 T-Bucks</option><option value="200">200 T-Bucks</option><option value="300">300 T-Bucks</option><option value="500">500 T-Bucks</option><option value="700">700 T-Bucks</option><option value="900">900 T-Bucks</option><option value="1000">1 000 T-Bucks</option><option value="1500">1 500 T-Bucks</option><option value="2000">2 000 T-Bucks</option><option value="4500">4 500 T-Bucks</option><option value="6000">6 000 T-Bucks</option><option value="7100">7 100 T-Bucks</option><option value="10000">10 000 T-Bucks</option>
+        </select>
+        <a class="btn contactAgent" id="agentTop" href="#" rel="noopener">OK — CONTACTER UN AGENT</a>
+        <p class="smallNote">Si le code ne fonctionne pas ou si tu souhaites acheter un article, contacte un agent juste ici.</p>
+      </section>
+
+      <div class="sectionDivider"><span>ARTICLES DISPONIBLES</span></div>
+      <div class="grid">
+        <article class="item"><div class="art">✦</div><span class="tag">PREMIUM</span><h2>Vaisseau premium</h2><p>Un vaisseau spécial pour ton aventure spatiale.</p><div class="price">2 000 T</div><button class="btn itemContact" data-item="Vaisseau premium" data-price="2 000 T" type="button">CONTACTER UN AGENT</button></article>
+        <article class="item"><div class="art">✧</div><span class="tag">ÉQUIPEMENT</span><h2>Canon amélioré</h2><p>Un équipement de qualité supérieure.</p><div class="price">1 000 T</div><button class="btn itemContact" data-item="Canon amélioré" data-price="1 000 T" type="button">CONTACTER UN AGENT</button></article>
+        <article class="item"><div class="art">◆</div><span class="tag">SKIN</span><h2>Skin galactique</h2><p>Un style spécial pour ton équipement.</p><div class="price">900 T-Bucks</div><button class="btn itemContact" data-item="Skin galactique" data-price="900 T-Bucks" type="button">CONTACTER UN AGENT</button></article>
+        <article class="item"><div class="art">⚔️🔥</div><span class="tag">ÉPÉE ÉLÉMENTAIRE</span><h2>Épée de feu</h2><p>Une lame ardente pour ton aventure.</p><div class="price">1 500 T-Bucks violets</div><button class="btn buyWithTBucks" data-item="Épée de feu" type="button">ACHETER — 1 500 T-BUCKS</button></article>
+        <article class="item"><div class="art">⚔️🌎</div><span class="tag">ÉPÉE ÉLÉMENTAIRE</span><h2>Épée de terre</h2><p>Une lame puissante inspirée de la roche.</p><div class="price">1 500 T-Bucks violets</div><button class="btn buyWithTBucks" data-item="Épée de terre" type="button">ACHETER — 1 500 T-BUCKS</button></article>
+        <article class="item"><div class="art">⚔️❄️</div><span class="tag">ÉPÉE ÉLÉMENTAIRE</span><h2>Épée de glace</h2><p>Une lame glacée pour tes combats.</p><div class="price">1 500 T-Bucks violets</div><button class="btn buyWithTBucks" data-item="Épée de glace" type="button">ACHETER — 1 500 T-BUCKS</button></article>
+        <article class="item"><div class="art">⚔️💧</div><span class="tag">ÉPÉE ÉLÉMENTAIRE</span><h2>Épée d’eau</h2><p>Une lame fluide inspirée de l’océan.</p><div class="price">1 500 T-Bucks violets</div><button class="btn buyWithTBucks" data-item="Épée d’eau" type="button">ACHETER — 1 500 T-BUCKS</button></article>
+      </div>
+      <p id="shopStatus" class="status" role="status" aria-live="polite"></p>
+      <p class="note">Les T-Bucks sont les fragments violets. Les pièces jaunes se gagnent en jouant aux niveaux et sont une monnaie différente.</p>
+      <a class="backBottom" href="space.html">← RETOUR À SPACE BATTLE</a>
+    </section>
+  </main>
+  <script src="personalisation.js"></script>
+  <script src="boutique.js"></script>
+</body>
+</html>

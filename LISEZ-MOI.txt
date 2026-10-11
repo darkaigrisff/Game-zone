@@ -1,0 +1,24 @@
+GAME ZONE — SPACE BATTLE : BUNDLE OPTIONS + CODES
+
+Contenu :
+- space.html / space.css / space.js : jeu de base conservé.
+- boutique.html / boutique.css / boutique.js : boutique, codes d'achat et vérification de l'offre 110 T-Bucks.
+- redeem.html / redeem.css / redeem.js : codes cadeau et lien vers la chaîne WhatsApp fournie.
+- paramètres.html / paramètres.css / paramètres.js : paramètres avec accès à la personnalisation.
+- personnalise.html / personalisation.css / personalisation.js : réglage des touches de jeu (gauche, droite, saut, attaque) de 75 % à 130 %.
+
+IMPORTANT — CODES DE VÉRIFICATION :
+- Les 59 codes SP-VEF fournis sont associés à l'offre 110 T-Bucks.
+- Un code de vérification est marqué utilisé sur cet appareil après activation.
+- Pour configurer des codes qui se réinitialisent après 24 h, ajoute leurs noms à DAILY_RESET_VERIFICATION_CODES dans boutique.js.
+- Un code d'achat de démonstration SP-ACHAT-110A a été ajouté pour permettre de tester le parcours. Remplace-le par le code d'achat officiel si tu en as déjà un.
+- Les autres codes d'achat existants gardent leur fonctionnement précédent et leurs montants. Les codes de vérification ne sont pas encore configurés pour ces autres montants.
+
+LIMITATION DE SÉCURITÉ :
+Ce projet est du HTML/JavaScript local. localStorage ne sécurise pas les paiements : un utilisateur peut effacer ses données ou modifier les fichiers. Cette version est un prototype/test, pas une preuve de paiement. Avant d'utiliser de l'argent réel, il faut un serveur qui vérifie les paiements et conserve les codes utilisés pour tous les joueurs.
+
+INSTALLATION :
+1. Fais une copie de sauvegarde du dossier actuel.
+2. Extrais tous les fichiers du ZIP dans le même dossier que space.html.
+3. Autorise le remplacement des fichiers existants.
+4. Dans le générateur HTML vers APK, reconstruis l'application en incluant tous les fichiers extraits.
