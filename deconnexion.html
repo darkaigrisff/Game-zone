@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#070b12">
+<title>Mon profil — GAME ZONE</title>
+<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="account.css">
+<link rel="icon" href="logo3.png">
+<style>
+.account-page{width:min(920px,calc(100% - 28px));margin:0 auto;padding:26px 0 54px}
+.account-top{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:28px}
+.account-top .brand{font-size:19px}
+.account-panel{border:1px solid #26374c;border-radius:22px;background:linear-gradient(145deg,#121f30,#0c1320);padding:clamp(18px,4vw,30px);box-shadow:0 18px 50px #0004}
+.account-eyebrow{color:#7cffbd;font-size:11px;font-weight:900;letter-spacing:2px}
+.account-title{font-size:clamp(28px,5vw,44px);margin:8px 0 6px;letter-spacing:-1.6px}
+.account-sub{color:#9db0c8;line-height:1.7;margin:0 0 22px}
+.profile-summary{display:flex;align-items:center;gap:14px;border:1px solid #26374c;background:#0a1420;border-radius:16px;padding:16px;margin:20px 0}
+.profile-avatar{display:grid;place-items:center;width:54px;height:54px;border-radius:16px;background:linear-gradient(135deg,#55e6dc,#489bff);color:#07121b;font-size:20px;font-weight:1000;flex-shrink:0}
+.profile-details{min-width:0;flex:1}.profile-details strong{display:block;font-size:20px;overflow-wrap:anywhere}.profile-details small{color:#9db0c8;overflow-wrap:anywhere}
+.game-links{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.game-link-card{display:flex;align-items:center;gap:13px;padding:14px;border:1px solid #26374c;border-radius:16px;background:#0a1420;min-width:0}
+.game-link-card img{width:58px;height:58px;object-fit:cover;border-radius:13px;flex-shrink:0}
+.game-link-info{flex:1;min-width:0}.game-link-info strong{display:block;font-size:16px}.game-link-info small{display:block;color:#9db0c8;font-size:12px;margin-top:4px;line-height:1.45}
+.game-link-card button{width:auto;min-width:94px;margin:0;padding:10px 12px;font-size:12px;white-space:nowrap}
+.linked-pill{color:#7cffbd!important}
+.account-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}.account-actions a,.account-actions button{margin:0}
+#accountMessage{min-height:20px;color:#7cffbd;font-size:13px;margin-top:14px}
+@media(max-width:620px){.game-links{grid-template-columns:1fr}.game-link-card{gap:10px;padding:12px}.game-link-card img{width:50px;height:50px}.game-link-card button{min-width:84px;padding:9px}.account-actions{grid-template-columns:1fr}.account-top .brand{font-size:16px}}
+</style>
+</head>
+<body>
+<div class="account-page">
+  <div class="account-top">
+    <a class="brand" href="home.html" aria-label="Retour à GAME ZONE"><span class="brand-mark">GZ</span><span>GAME <span>ZONE</span></span></a>
+    <a class="back" href="home.html">← Accueil</a>
+  </div>
+  <section class="account-panel">
+    <div class="account-eyebrow">ESPACE PERSONNEL</div>
+    <h1 class="account-title">Mon compte GAME ZONE</h1>
+    <p class="account-sub">Gère ta session et associe ton compte aux jeux GAME ZONE.</p>
+    <div class="profile-summary">
+      <div class="profile-avatar" id="profileAvatar">GZ</div>
+      <div class="profile-details"><strong id="profilePseudo">Invité</strong><small id="profileEmail">Connecte-toi pour gérer tes jeux.</small></div>
+    </div>
+    <h2>Jeux associés</h2>
+    <p class="account-sub">Choisis les jeux qui doivent reconnaître ton profil GAME ZONE sur cet appareil.</p>
+    <div class="game-links">
+      <article class="game-link-card">
+        <img src="bloxfruit.png" alt="Icône Blox Fruit">
+        <div class="game-link-info"><strong>Blox Fruit</strong><small id="bloxStatus">Compte non associé</small></div>
+        <button class="secondary" type="button" data-toggle-link="bloxfruit" id="bloxLinkButton">Lier</button>
+      </article>
+      <article class="game-link-card">
+        <img src="space.png" alt="Icône Space Battle">
+        <div class="game-link-info"><strong>Space Battle</strong><small id="spaceStatus">Compte non associé</small></div>
+        <button class="secondary" type="button" data-toggle-link="space" id="spaceLinkButton">Lier</button>
+      </article>
+    </div>
+    <div id="accountMessage" role="status" aria-live="polite"></div>
+    <div class="account-actions">
+      <a class="btn secondary" href="compte.html">Voir mon profil et mes T-Bucks</a>
+      <button id="logoutBtn" type="button">Déconnexion</button>
+    </div>
+    <p class="small" style="margin-top:18px">La liaison affichée ici est enregistrée sur cet appareil dans cette version de démonstration. La synchronisation réelle entre appareils et la vérification d’applications Android nécessitent une intégration native et un serveur.</p>
+  </section>
+</div>
+<script src="account.js"></script>
+</body>
+</html>
